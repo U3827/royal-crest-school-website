@@ -17,7 +17,7 @@
 
     <meta
         name="keywords"
-        content="Royal Crest International School, school, education, primary school, secondary school, Nigeria"
+        content="Royal Crest International School, school, education, primary school, secondary school, Kano, Nigeria"
     >
 
     <meta
@@ -34,9 +34,8 @@
         Royal Crest International School | Inspiring Excellence
     </title>
 
-    <!-- =========================================
-         GOOGLE FONTS
-    ========================================== -->
+
+    <!-- Google Fonts -->
 
     <link
         rel="preconnect"
@@ -50,22 +49,20 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
         rel="stylesheet"
     >
 
-    <!-- =========================================
-         ICONS
-    ========================================== -->
+
+    <!-- Font Awesome -->
 
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- =========================================
-         STYLESHEET
-    ========================================== -->
+
+    <!-- Main Stylesheet -->
 
     <link
         rel="stylesheet"
@@ -78,9 +75,9 @@
 <body>
 
 
-    <!-- =========================================
+    <!-- =====================================================
          TOP BAR
-    ========================================== -->
+    ====================================================== -->
 
     <div class="top-bar">
 
@@ -88,44 +85,35 @@
 
             <div class="top-bar-left">
 
-                <span>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Kano, Nigeria
-                </span>
+                <a href="tel:+2349020213832">
 
-                <span>
                     <i class="fa-solid fa-phone"></i>
-                    +234 800 000 0000
-                </span>
+
+                    +234 902 021 3832
+
+                </a>
+
+
+                <a href="mailto:masausman1@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    masausman1@gmail.com
+
+                </a>
 
             </div>
 
 
             <div class="top-bar-right">
 
-                <a href="#">
+                <span>
 
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-solid fa-location-dot"></i>
 
-                </a>
+                    Kano, Nigeria
 
-                <a href="#">
-
-                    <i class="fa-brands fa-instagram"></i>
-
-                </a>
-
-                <a href="#">
-
-                    <i class="fa-brands fa-x-twitter"></i>
-
-                </a>
-
-                <a href="#">
-
-                    <i class="fa-brands fa-youtube"></i>
-
-                </a>
+                </span>
 
             </div>
 
@@ -134,19 +122,21 @@
     </div>
 
 
-    <!-- =========================================
-         HEADER
-    ========================================== -->
 
-    <header class="site-header" id="siteHeader">
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header
+        class="site-header"
+        id="siteHeader"
+    >
 
         <div class="container header-inner">
 
 
-            <!-- LOGO -->
-
             <a
-                href="index.html"
+                href="#home"
                 class="school-logo"
                 aria-label="Royal Crest International School home"
             >
@@ -156,6 +146,7 @@
                     <i class="fa-solid fa-graduation-cap"></i>
 
                 </span>
+
 
                 <span class="logo-text">
 
@@ -172,7 +163,8 @@
             </a>
 
 
-            <!-- DESKTOP NAVIGATION -->
+
+            <!-- Navigation -->
 
             <nav
                 class="main-nav"
@@ -181,56 +173,83 @@
             >
 
                 <a
-                    href="index.html"
+                    href="#home"
                     class="active"
                 >
                     Home
                 </a>
 
-                <a href="about.html">
+
+                <a
+                    href="#"
+                    data-info="about"
+                >
                     About
                 </a>
 
-                <a href="academics.html">
+
+                <a
+                    href="#"
+                    data-info="academics"
+                >
                     Academics
                 </a>
 
-                <a href="admissions.html">
+
+                <a
+                    href="#"
+                    data-info="admissions"
+                >
                     Admissions
                 </a>
 
-                <a href="staff.html">
+
+                <a
+                    href="#"
+                    data-info="staff"
+                >
                     Our Staff
                 </a>
 
-                <a href="school-life.html">
+
+                <a
+                    href="#"
+                    data-info="school-life"
+                >
                     School Life
                 </a>
 
-                <a href="contact.html">
+
+                <a
+                    href="#"
+                    data-info="contact"
+                >
                     Contact
                 </a>
 
             </nav>
 
 
-            <!-- HEADER ACTION -->
 
-            <a
-                href="admissions.html"
-                class="header-cta"
+            <!-- Header CTA -->
+
+            <button
+                type="button"
+                class="header-cta info-trigger"
+                data-info="admissions"
             >
 
                 <span>
-                    Apply Now
+                    Admissions
                 </span>
 
                 <i class="fa-solid fa-arrow-right"></i>
 
-            </a>
+            </button>
 
 
-            <!-- MOBILE MENU BUTTON -->
+
+            <!-- Mobile Menu -->
 
             <button
                 type="button"
@@ -252,11 +271,13 @@
     </header>
 
 
-    <!-- =========================================
-         HERO
-    ========================================== -->
 
-    <main>
+    <main id="home">
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
         <section class="hero">
 
@@ -266,6 +287,7 @@
 
 
             <div class="container hero-content">
+
 
                 <div class="hero-copy reveal">
 
@@ -301,26 +323,28 @@
 
                     <div class="hero-actions">
 
-                        <a
-                            href="admissions.html"
-                            class="btn btn-primary"
+                        <button
+                            type="button"
+                            class="btn btn-primary info-trigger"
+                            data-info="admissions"
                         >
 
-                            Begin Your Journey
+                            Explore Admissions
 
                             <i class="fa-solid fa-arrow-right"></i>
 
-                        </a>
+                        </button>
 
 
-                        <a
-                            href="about.html"
+                        <button
+                            type="button"
                             class="btn btn-outline"
+                            data-info="about"
                         >
 
                             Discover Our School
 
-                        </a>
+                        </button>
 
                     </div>
 
@@ -329,21 +353,10 @@
 
                         <div class="trust-avatars">
 
-                            <span>
-                                A
-                            </span>
-
-                            <span>
-                                M
-                            </span>
-
-                            <span>
-                                S
-                            </span>
-
-                            <span>
-                                +
-                            </span>
+                            <span>A</span>
+                            <span>M</span>
+                            <span>S</span>
+                            <span>+</span>
 
                         </div>
 
@@ -365,16 +378,21 @@
                 </div>
 
 
-                <!-- HERO CARD -->
+
+                <!-- Hero Card -->
 
                 <div class="hero-card reveal">
 
                     <div class="hero-card-top">
 
                         <span>
+
                             <i class="fa-solid fa-star"></i>
+
                             WHY ROYAL CREST
+
                         </span>
+
 
                         <i class="fa-solid fa-arrow-up-right"></i>
 
@@ -443,8 +461,6 @@
             </div>
 
 
-            <!-- HERO SCROLL -->
-
             <a
                 href="#welcome"
                 class="hero-scroll"
@@ -461,9 +477,10 @@
         </section>
 
 
-        <!-- =========================================
-             WELCOME SECTION
-        ========================================== -->
+
+        <!-- =================================================
+             WELCOME
+        ================================================== -->
 
         <section
             class="welcome-section section-padding"
@@ -479,9 +496,14 @@
                         WHO WE ARE
                     </p>
 
+
                     <h2>
+
                         A school where
-                        <span>potential becomes purpose.</span>
+                        <span>
+                            potential becomes purpose.
+                        </span>
+
                     </h2>
 
                 </div>
@@ -513,16 +535,17 @@
                         </p>
 
 
-                        <a
-                            href="about.html"
-                            class="text-link"
+                        <button
+                            type="button"
+                            class="text-link info-trigger"
+                            data-info="about"
                         >
 
                             Learn more about our school
 
                             <i class="fa-solid fa-arrow-right"></i>
 
-                        </a>
+                        </button>
 
                     </div>
 
@@ -598,7 +621,6 @@
 
                         </div>
 
-
                     </div>
 
                 </div>
@@ -608,9 +630,10 @@
         </section>
 
 
-        <!-- =========================================
-             PROGRAMS
-        ========================================== -->
+
+        <!-- =================================================
+             ACADEMIC PROGRAMMES
+        ================================================== -->
 
         <section class="programs-section section-padding">
 
@@ -623,10 +646,16 @@
                         OUR ACADEMICS
                     </p>
 
+
                     <h2>
+
                         Learning designed
-                        <span>for every stage.</span>
+                        <span>
+                            for every stage.
+                        </span>
+
                     </h2>
+
 
                     <p>
 
@@ -648,15 +677,18 @@
                             01
                         </div>
 
+
                         <div class="program-icon">
 
                             <i class="fa-solid fa-child-reaching"></i>
 
                         </div>
 
+
                         <h3>
                             Early Years
                         </h3>
+
 
                         <p>
 
@@ -666,15 +698,21 @@
 
                         </p>
 
-                        <a href="academics.html">
 
-                            Explore programme
+                        <button
+                            type="button"
+                            class="card-link info-trigger"
+                            data-info="academics"
+                        >
+
+                            Explore academics
 
                             <i class="fa-solid fa-arrow-right"></i>
 
-                        </a>
+                        </button>
 
                     </article>
+
 
 
                     <article class="program-card featured reveal">
@@ -683,15 +721,18 @@
                             02
                         </div>
 
+
                         <div class="program-icon">
 
                             <i class="fa-solid fa-book-open-reader"></i>
 
                         </div>
 
+
                         <h3>
                             Primary School
                         </h3>
+
 
                         <p>
 
@@ -701,15 +742,21 @@
 
                         </p>
 
-                        <a href="academics.html">
 
-                            Explore programme
+                        <button
+                            type="button"
+                            class="card-link info-trigger"
+                            data-info="academics"
+                        >
+
+                            Explore academics
 
                             <i class="fa-solid fa-arrow-right"></i>
 
-                        </a>
+                        </button>
 
                     </article>
+
 
 
                     <article class="program-card reveal">
@@ -718,15 +765,18 @@
                             03
                         </div>
 
+
                         <div class="program-icon">
 
                             <i class="fa-solid fa-graduation-cap"></i>
 
                         </div>
 
+
                         <h3>
                             Secondary School
                         </h3>
+
 
                         <p>
 
@@ -736,16 +786,20 @@
 
                         </p>
 
-                        <a href="academics.html">
 
-                            Explore programme
+                        <button
+                            type="button"
+                            class="card-link info-trigger"
+                            data-info="academics"
+                        >
+
+                            Explore academics
 
                             <i class="fa-solid fa-arrow-right"></i>
 
-                        </a>
+                        </button>
 
                     </article>
-
 
                 </div>
 
@@ -754,9 +808,10 @@
         </section>
 
 
-        <!-- =========================================
+
+        <!-- =================================================
              WHY CHOOSE US
-        ========================================== -->
+        ================================================== -->
 
         <section class="why-section section-padding">
 
@@ -766,100 +821,134 @@
                 <div class="why-grid">
 
 
-                    <div class="why-visual reveal">
+                    <div class="why-content reveal">
 
-                        <div class="visual-label">
+                        <p class="section-eyebrow">
+                            THE ROYAL CREST EXPERIENCE
+                        </p>
 
-                            <i class="fa-solid fa-award"></i>
 
+                        <h2>
+
+                            More than a school.
                             <span>
-                                Excellence in Education
+                                A foundation for life.
                             </span>
 
-                        </div>
+                        </h2>
+
+
+                        <p>
+
+                            We believe the best education develops
+                            the whole child. Academic achievement,
+                            personal character, communication,
+                            creativity and leadership all have a
+                            place in the learning journey.
+
+                        </p>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-primary info-trigger"
+                            data-info="school-life"
+                        >
+
+                            Discover School Life
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
 
                     </div>
 
 
-                    <div class="why-content reveal">
-
-                        <p class="section-eyebrow">
-                            THE ROYAL CREST DIFFERENCE
-                        </p>
-
-                        <h2>
-                            More than a school.
-                            <span>A community.</span>
-                        </h2>
-
-                        <p>
-
-                            Every child deserves an environment
-                            where they feel seen, supported and
-                            challenged to become their best self.
-
-                        </p>
+                    <div class="why-features reveal">
 
 
-                        <div class="why-list">
-
-                            <div>
-
-                                <span>
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-
-                                <div>
-
-                                    <strong>
-                                        Experienced educators
-                                    </strong>
-
-                                    <p>
-                                        Passionate teachers committed
-                                        to every learner's progress.
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-
-                            <div>
-
-                                <span>
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-
-                                <div>
-
-                                    <strong>
-                                        Safe learning environment
-                                    </strong>
-
-                                    <p>
-                                        A supportive space where pupils
-                                        can learn with confidence.
-                                    </p>
-
-                                                        </div>
-
-
-                        <div>
+                        <div class="why-feature">
 
                             <span>
-                                <i class="fa-solid fa-check"></i>
+                                01
                             </span>
 
                             <div>
 
-                                <strong>
-                                    Holistic development
-                                </strong>
+                                <h3>
+                                    Strong Foundations
+                                </h3>
 
                                 <p>
-                                    Academic, creative, social and
-                                    leadership development.
+                                    Building essential knowledge
+                                    and skills from the earliest
+                                                           stages of learning.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="why-feature">
+
+                            <span>
+                                02
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Confident Communication
+                                </h3>
+
+                                <p>
+                                    Encouraging pupils to express
+                                    ideas clearly and respectfully.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="why-feature">
+
+                            <span>
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Character Development
+                                </h3>
+
+                                <p>
+                                    Developing responsibility,
+                                    integrity and respect for others.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="why-feature">
+
+                            <span>
+                                04
+                            </span>
+
+                            <div>
+
+                                <h3>
+                                    Future Readiness
+                                </h3>
+
+                                <p>
+                                    Preparing learners to adapt,
+                                    think critically and lead.
                                 </p>
 
                             </div>
@@ -868,412 +957,695 @@
 
                     </div>
 
-
-                    <a
-                        href="about.html"
-                        class="btn btn-dark"
-                    >
-
-                        Why families choose us
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
-
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- =========================================
-         ADMISSIONS CTA
-    ========================================== -->
 
-    <section class="admissions-cta section-padding">
+        <!-- =================================================
+             SCHOOL LIFE PREVIEW
+        ================================================== -->
 
-        <div class="container">
+        <section class="experience-section section-padding">
 
-            <div class="cta-inner reveal">
+            <div class="container">
 
-                <div>
+
+                <div class="section-heading section-heading-center reveal">
 
                     <p class="section-eyebrow">
-                        ADMISSIONS ARE OPEN
+                        SCHOOL LIFE
                     </p>
 
+
                     <h2>
-                        Give your child
-                        <span>a place to thrive.</span>
+
+                        Learning happens
+                        <span>
+                            everywhere.
+                        </span>
+
                     </h2>
+
 
                     <p>
 
-                        Take the first step toward joining
-                        the Royal Crest learning community.
+                        School life extends beyond lessons,
+                        creating opportunities for pupils to
+                        communicate, collaborate and grow.
 
                     </p>
 
                 </div>
 
 
-                <a
-                    href="admissions.html"
-                    class="btn btn-light"
-                >
+                <div class="experience-grid">
 
-                    Explore Admissions
 
-                    <i class="fa-solid fa-arrow-right"></i>
+                    <div class="experience-card reveal">
 
-                </a>
+                        <div class="experience-icon">
+
+                            <i class="fa-solid fa-people-group"></i>
+
+                        </div>
+
+                        <h3>
+                            Community
+                        </h3>
+
+                        <p>
+                            A respectful environment where
+                            learners grow together.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-card reveal">
+
+                        <div class="experience-icon">
+
+                            <i class="fa-solid fa-masks-theater"></i>
+
+                        </div>
+
+                        <h3>
+                            Creativity
+                        </h3>
+
+                        <p>
+                            Opportunities to discover imagination
+                            and self-expression.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-card reveal">
+
+                        <div class="experience-icon">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                        </div>
+
+                        <h3>
+                            Leadership
+                        </h3>
+
+                        <p>
+                            Encouraging responsibility, confidence
+                            and positive influence.
+                        </p>
+
+                    </div>
+
+
+                    <div class="experience-card reveal">
+
+                        <div class="experience-icon">
+
+                            <i class="fa-solid fa-person-running"></i>
+
+                        </div>
+
+                        <h3>
+                            Activity
+                        </h3>
+
+                        <p>
+                            Supporting healthy development through
+                            movement and participation.
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- =========================================
-         NEWS PREVIEW
-    ========================================== -->
 
-    <section class="news-section section-padding">
+        <!-- =================================================
+             STAFF PREVIEW
+        ================================================== -->
+
+        <section class="staff-preview section-padding">
+
+            <div class="container">
+
+
+                <div class="staff-preview-grid">
+
+
+                    <div class="staff-preview-content reveal">
+
+                        <p class="section-eyebrow">
+                            OUR PEOPLE
+                        </p>
+
+
+                        <h2>
+
+                            Teachers who
+                            <span>
+                                inspire learning.
+                            </span>
+
+                        </h2>
+
+
+                        <p>
+
+                            Our school community is supported by
+                            educators and staff who value
+                            professionalism, care and continuous
+                            development.
+
+                        </p>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-primary info-trigger"
+                            data-info="staff"
+                        >
+
+                            Meet Our Team
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="staff-preview-card reveal">
+
+                        <div class="staff-mini-icon">
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                        </div>
+
+
+                        <span>
+                            OUR COMMITMENT
+                        </span>
+
+
+                        <h3>
+                            Every learner deserves
+                            people who believe in them.
+                        </h3>
+
+
+                        <p>
+                            From leadership to the classroom,
+                            our team works together to support
+                            every learner's journey.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ADMISSIONS
+        ================================================== -->
+
+        <section class="admissions-section section-padding">
+
+            <div class="container">
+
+
+                <div class="admissions-card reveal">
+
+
+                    <div class="admissions-status">
+
+                        <span class="status-dot"></span>
+
+                        ADMISSIONS CURRENTLY CLOSED
+
+                    </div>
+
+
+                    <p class="section-eyebrow">
+                        ADMISSIONS
+                    </p>
+
+
+                    <h2>
+
+                        Planning for your
+                        <span>
+                            child's future?
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Admissions are currently closed.
+                        Information about the next admission
+                        window will be made available when
+                        applications reopen.
+
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-gold info-trigger"
+                        data-info="admissions"
+                    >
+
+                        Admission Information
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT CTA
+        ================================================== -->
+
+        <section class="contact-cta">
+
+            <div class="container">
+
+                <div class="contact-cta-inner">
+
+
+                    <div>
+
+                        <p class="section-eyebrow">
+                            GET IN TOUCH
+                        </p>
+
+
+                        <h2>
+                            We'd be happy to
+                            hear from you.
+                        </h2>
+
+
+                        <p>
+                            Have a question about Royal Crest
+                            International School? Contact us directly.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-buttons">
+
+                        <a
+                            href="tel:+2349020213832"
+                            class="btn btn-light"
+                        >
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            Call Us
+
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/2349020213832?text=Hello%20Royal%20Crest%20International%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-whatsapp"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp
+
+                        </a>
+
+
+                        <a
+                            href="mailto:masausman1@gmail.com?subject=Royal%20Crest%20International%20School%20Enquiry"
+                            class="btn btn-light"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            Email Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
 
         <div class="container">
 
 
-            <div class="section-heading news-heading reveal">
+            <div class="footer-grid">
 
-                <div>
 
-                    <p class="section-eyebrow">
-                        SCHOOL NEWS
+                <div class="footer-brand">
+
+                    <a
+                        href="#home"
+                        class="school-logo"
+                    >
+
+                        <span class="logo-mark">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                        </span>
+
+
+                        <span class="logo-text">
+
+                            <strong>
+                                ROYAL CREST
+                            </strong>
+
+                            <small>
+                                INTERNATIONAL SCHOOL
+                            </small>
+
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        Inspiring Excellence. Building Leaders.
                     </p>
 
-                    <h2>
-                        What's happening
-                        <span>at Royal Crest.</span>
-                    </h2>
+
+                    <div class="footer-socials">
+
+                        <a
+                            href="https://wa.me/2349020213832"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="WhatsApp"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://t.me/usyboy_official"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Telegram"
+                        >
+
+                            <i class="fa-brands fa-telegram"></i>
+
+                        </a>
+
+
+                        <a
+                            href="mailto:masausman1@gmail.com"
+                            aria-label="Email"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </a>
+
+                    </div>
 
                 </div>
 
 
-                <a
-                    href="news.html"
-                    class="text-link"
-                >
 
-                    View all news
+                <div class="footer-links">
 
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-            </div>
+                    <h3>
+                        Explore
+                    </h3>
 
 
-            <div class="news-grid">
+                    <button
+                        type="button"
+                        data-info="about"
+                    >
+                        About
+                    </button>
 
 
-                <article class="news-card reveal">
+                    <button
+                        type="button"
+                        data-info="academics"
+                    >
+                        Academics
+                    </button>
 
-                    <div class="news-image">
 
-                        <span>
-                            School Life
-                        </span>
+                    <button
+                        type="button"
+                        data-info="admissions"
+                    >
+                        Admissions
+                    </button>
 
-                    </div>
 
-                    <div class="news-content">
+                    <button
+                        type="button"
+                        data-info="staff"
+                    >
+                        Our Staff
+                    </button>
 
-                        <small>
-                            September 18, 2026
-                        </small>
 
-                        <h3>
-                            A new academic year begins
-                            with renewed energy.
-                        </h3>
+                    <button
+                        type="button"
+                        data-info="school-life"
+                    >
+                        School Life
+                    </button>
 
-                        <a href="news.html">
 
-                            Read story
+                    <button
+                        type="button"
+                        data-info="contact"
+                    >
+                        Contact
+                    </button>
 
-                            <i class="fa-solid fa-arrow-right"></i>
+                </div>
 
+
+
+                <div class="footer-contact">
+
+                    <h3>
+                        Contact
+                    </h3>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        Kano, Nigeria
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+2349020213832">
+                            +234 902 021 3832
                         </a>
 
-                    </div>
-
-                </article>
+                    </p>
 
 
-                <article class="news-card reveal">
+                    <p>
 
-                    <div class="news-image image-two">
+                        <i class="fa-solid fa-envelope"></i>
 
-                        <span>
-                            Achievement
-                        </span>
-
-                    </div>
-
-                    <div class="news-content">
-
-                        <small>
-                            August 29, 2026
-                        </small>
-
-                        <h3>
-                            Celebrating our learners'
-                            outstanding achievements.
-                        </h3>
-
-                        <a href="news.html">
-
-                            Read story
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
+                        <a href="mailto:masausman1@gmail.com">
+                            masausman1@gmail.com
                         </a>
 
-                    </div>
-
-                </article>
+                    </p>
 
 
-                <article class="news-card reveal">
+                    <p>
 
-                    <div class="news-image image-three">
+                        <i class="fa-brands fa-telegram"></i>
 
-                        <span>
-                            Community
-                        </span>
-
-                    </div>
-
-                    <div class="news-content">
-
-                        <small>
-                            August 12, 2026
-                        </small>
-
-                        <h3>
-                            Families come together for
-                            our annual community day.
-                        </h3>
-
-                        <a href="news.html">
-
-                            Read story
-
-                            <i class="fa-solid fa-arrow-right"></i>
-
+                        <a
+                            href="https://t.me/usyboy_official"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            @usyboy_official
                         </a>
 
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-<!-- =========================================
-     FOOTER
-========================================== -->
-
-<footer class="site-footer">
-
-    <div class="container">
-
-
-        <div class="footer-main">
-
-
-            <div class="footer-about">
-
-                <a
-                    href="index.html"
-                    class="school-logo footer-logo"
-                >
-
-                    <span class="logo-mark">
-
-                        <i class="fa-solid fa-graduation-cap"></i>
-
-                    </span>
-
-                    <span class="logo-text">
-
-                        <strong>
-                            ROYAL CREST
-                        </strong>
-
-                        <small>
-                            INTERNATIONAL SCHOOL
-                        </small>
-
-                    </span>
-
-                </a>
-
-
-                <p>
-
-                    Inspiring excellence, nurturing character
-                    and building confident leaders for tomorrow.
-
-                </p>
-
-
-                <div class="footer-socials">
-
-                    <a href="#" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" aria-label="X">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-
-                    <a href="#" aria-label="YouTube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
+                    </p>
 
                 </div>
 
             </div>
 
 
-            <div class="footer-column">
 
-                <h3>
-                    Explore
-                </h3>
-
-                <a href="about.html">
-                    About Us
-                </a>
-
-                <a href="academics.html">
-                    Academics
-                </a>
-
-                <a href="staff.html">
-                    Our Staff
-                </a>
-
-                <a href="school-life.html">
-                    School Life
-                </a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>
-                    Admissions
-                </h3>
-
-                <a href="admissions.html">
-                    How to Apply
-                </a>
-
-                <a href="admissions.html">
-                    Entry Requirements
-                </a>
-
-                <a href="admissions.html">
-                    School Fees
-                </a>
-
-                <a href="contact.html">
-                    Enquiries
-                </a>
-
-            </div>
-
-
-            <div class="footer-column footer-contact">
-
-                <h3>
-                    Contact
-                </h3>
+            <div class="footer-bottom">
 
                 <p>
 
-                    <i class="fa-solid fa-location-dot"></i>
+                    &copy;
 
-                    Kano, Nigeria
+                    <span id="current-year">
+                        2026
+                    </span>
+
+                    Royal Crest International School.
+                    All rights reserved.
 
                 </p>
 
-                <p>
-
-                    <i class="fa-solid fa-phone"></i>
-
-                    +234 800 000 0000
-
-                </p>
 
                 <p>
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    hello@royalcrestschool.com
-
+                    Inspiring Excellence. Building Leaders.
                 </p>
 
             </div>
 
         </div>
 
+    </footer>
 
-        <div class="footer-bottom">
 
-            <p>
-                © <span id="currentYear"></span>
-                Royal Crest International School.
-                All rights reserved.
+
+    <!-- =====================================================
+         INFORMATION MODAL
+    ====================================================== -->
+
+    <div
+        class="info-modal"
+        id="infoModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-overlay"
+            data-close-modal
+        ></div>
+
+
+        <div
+            class="info-modal-box"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+        >
+
+            <button
+                type="button"
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close information"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="modal-icon">
+
+                <i
+                    class="fa-solid fa-circle-info"
+                    id="modalIcon"
+                ></i>
+
+            </div>
+
+
+            <p
+                class="modal-eyebrow"
+                id="modalEyebrow"
+            >
+                ROYAL CREST
             </p>
 
-            <p>
-                Inspiring Excellence. Building Leaders.
-            </p>
+
+            <h2 id="modalTitle">
+                Information
+            </h2>
+
+
+            <div
+                class="modal-content"
+                id="modalContent"
+            ></div>
+
+
+            <button
+                type="button"
+                class="btn btn-primary modal-action"
+                data-close-modal
+            >
+
+                Close
+
+                <i class="fa-solid fa-check"></i>
+
+            </button>
 
         </div>
 
     </div>
 
-</footer>
 
 
-<!-- =========================================
-     JAVASCRIPT
-========================================== -->
-
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
-  </html>
-
-                          
+</html>
