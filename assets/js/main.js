@@ -2,6 +2,7 @@
    ROYAL CREST INTERNATIONAL SCHOOL
    Main JavaScript
    Single-Page Website
+   PART 1 OF 2
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -87,10 +88,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>Our Values</h3>
 
                 <ul>
-                    <li>Excellence in learning and personal growth.</li>
-                    <li>Respect for every member of the school community.</li>
-                    <li>Integrity, responsibility and good character.</li>
-                    <li>Creativity, curiosity and continuous improvement.</li>
+                    <li>
+                        Excellence in learning and personal growth.
+                    </li>
+
+                    <li>
+                        Respect for every member of the school
+                        community.
+                    </li>
+
+                    <li>
+                        Integrity, responsibility and good character.
+                    </li>
+
+                    <li>
+                        Creativity, curiosity and continuous
+                        improvement.
+                    </li>
                 </ul>
             `
         },
@@ -125,7 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p>
                     Strong foundations in literacy, mathematics,
                     science and wider learning, supported by
-                    communication, creativity and character development.
+                    communication, creativity and character
+                    development.
                 </p>
 
                 <h3>Secondary School</h3>
@@ -140,11 +155,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>Our Learning Approach</h3>
 
                 <ul>
-                    <li>Clear academic foundations.</li>
-                    <li>Active classroom participation.</li>
-                    <li>Communication and presentation skills.</li>
-                    <li>Problem-solving and critical thinking.</li>
-                    <li>Creativity and practical learning.</li>
+                    <li>
+                        Clear academic foundations.
+                    </li>
+
+                    <li>
+                        Active classroom participation.
+                    </li>
+
+                    <li>
+                        Communication and presentation skills.
+                    </li>
+
+                    <li>
+                        Problem-solving and critical thinking.
+                    </li>
+
+                    <li>
+                        Creativity and practical learning.
+                    </li>
                 </ul>
             `
         },
@@ -214,11 +243,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>Professional Commitment</h3>
 
                 <ul>
-                    <li>Child-centred teaching and support.</li>
-                    <li>Clear communication with learners and families.</li>
-                    <li>Continuous professional development.</li>
-                    <li>Positive classroom management.</li>
-                    <li>Strong academic and character expectations.</li>
+                    <li>
+                        Child-centred teaching and support.
+                    </li>
+
+                    <li>
+                        Clear communication with learners and families.
+                    </li>
+
+                    <li>
+                        Continuous professional development.
+                    </li>
+
+                    <li>
+                        Positive classroom management.
+                    </li>
+
+                    <li>
+                        Strong academic and character expectations.
+                    </li>
                 </ul>
 
                 <p>
@@ -273,11 +316,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h3>Activities</h3>
 
                 <ul>
-                    <li>Creative and artistic activities.</li>
-                    <li>Sports and physical activities.</li>
-                    <li>Communication and presentation activities.</li>
-                    <li>Leadership and teamwork opportunities.</li>
-                    <li>Community-focused school activities.</li>
+                    <li>
+                        Creative and artistic activities.
+                    </li>
+
+                    <li>
+                        Sports and physical activities.
+                    </li>
+
+                    <li>
+                        Communication and presentation activities.
+                    </li>
+
+                    <li>
+                        Leadership and teamwork opportunities.
+                    </li>
+
+                    <li>
+                        Community-focused school activities.
+                    </li>
                 </ul>
             `
         },
@@ -392,19 +449,14 @@ document.addEventListener("DOMContentLoaded", () => {
        MOBILE MENU
        ===================================================== */
 
-    if (
-        menuToggle &&
-        mainNav
-    ) {
+    if (menuToggle && mainNav) {
 
         menuToggle.addEventListener(
             "click",
             () => {
 
                 const isOpen =
-                    mainNav.classList.toggle(
-                        "open"
-                    );
+                    mainNav.classList.toggle("open");
 
                 menuToggle.setAttribute(
                     "aria-expanded",
@@ -432,9 +484,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "click",
                 () => {
 
-                    mainNav.classList.remove(
-                        "open"
-                    );
+                    mainNav.classList.remove("open");
 
                     menuToggle.setAttribute(
                         "aria-expanded",
@@ -476,32 +526,44 @@ document.addEventListener("DOMContentLoaded", () => {
             information[type];
 
 
-        modalEyebrow.textContent =
-            data.eyebrow;
+        if (modalEyebrow) {
+
+            modalEyebrow.textContent =
+                data.eyebrow;
+
+        }
 
 
-        modalTitle.textContent =
-            data.title;
+        if (modalTitle) {
+
+            modalTitle.textContent =
+                data.title;
+
+        }
 
 
-        modalContent.innerHTML =
-            data.content;
+        if (modalContent) {
+
+            modalContent.innerHTML =
+                data.content;
+
+        }
 
 
-        modalIcon.className =
-            `fa-solid ${data.icon}`;
+        if (modalIcon) {
+
+            modalIcon.className =
+                "fa-solid " + data.icon;
+
+        }
 
 
-        infoModal.classList.add(
-            "active"
-        );
-
+        infoModal.classList.add("active");
 
         infoModal.setAttribute(
             "aria-hidden",
             "false"
         );
-
 
         document.body.classList.add(
             "modal-open"
@@ -530,7 +592,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 event.preventDefault();
 
                 const type =
-                    button.dataset.info;
+                    button.getAttribute(
+                        "data-info"
+                    );
 
                 openModal(type);
 
@@ -551,16 +615,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        infoModal.classList.remove(
-            "active"
-        );
-
+        infoModal.classList.remove("active");
 
         infoModal.setAttribute(
             "aria-hidden",
             "true"
         );
-
 
         document.body.classList.remove(
             "modal-open"
@@ -579,39 +639,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    closeModalButtons.forEach(
-        (button) => {
+    closeModalButtons.forEach((button) => {
 
-            button.addEventListener(
+        button.addEventListener(
+            "click",
+            closeModal
+        );
+
+    });
+
+
+    /* =====================================================
+       CLOSE MODAL BY OVERLAY
+       ===================================================== */
+
+    if (infoModal) {
+
+        const modalOverlay =
+            infoModal.querySelector(
+                ".modal-overlay"
+            );
+
+
+        if (modalOverlay) {
+
+            modalOverlay.addEventListener(
                 "click",
                 closeModal
             );
 
         }
-    );
-
-
-    /* =====================================================
-       CLOSE MODAL BY OUTSIDE CLICK
-       ===================================================== */
-
-    if (infoModal) {
-
-        infoModal.addEventListener(
-            "click",
-            (event) => {
-
-                if (
-                    event.target ===
-                    infoModal
-                ) {
-
-                    closeModal();
-
-                }
-
-            }
-        );
 
     }
 
@@ -624,45 +681,38 @@ document.addEventListener("DOMContentLoaded", () => {
         "keydown",
         (event) => {
 
+            if (event.key !== "Escape") {
+                return;
+            }
+
+
             if (
-                event.key === "Escape"
+                infoModal &&
+                infoModal.classList.contains("active")
             ) {
 
-                if (
-                    infoModal &&
-                    infoModal.classList.contains(
-                        "active"
-                    )
-                ) {
+                closeModal();
 
-                    closeModal();
-
-                }
+            }
 
 
-                if (
-                    mainNav &&
-                    mainNav.classList.contains(
-                        "open"
-                    )
-                ) {
+            if (
+                mainNav &&
+                mainNav.classList.contains("open")
+            ) {
 
-                    mainNav.classList.remove(
-                        "open"
+                mainNav.classList.remove("open");
+
+
+                if (menuToggle) {
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
                     );
 
-
-                    if (menuToggle) {
-
-                        menuToggle.setAttribute(
-                            "aria-expanded",
-                            "false"
-                        );
-
-                        menuToggle.innerHTML =
-                            '<i class="fa-solid fa-bars"></i>';
-
-                    }
+                    menuToggle.innerHTML =
+                        '<i class="fa-solid fa-bars"></i>';
 
                 }
 
@@ -670,6 +720,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
     );
+/* =========================================================
+   ROYAL CREST INTERNATIONAL SCHOOL
+   Main JavaScript
+   Single-Page Website
+   PART 2 OF 2
+   ========================================================= */
 
 
     /* =====================================================
@@ -797,6 +853,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     "visible"
                                 );
 
+
                                 observer.unobserve(
                                     entry.target
                                 );
@@ -838,125 +895,127 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-        // =========================================================
-    // CURRENT YEAR
-    // =========================================================
+    /* =====================================================
+       CURRENT YEAR
+       ===================================================== */
 
-    const yearElement = document.getElementById("currentYear");
+    const yearElement =
+        document.getElementById(
+            "currentYear"
+        );
+
 
     if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
+
+        yearElement.textContent =
+            new Date().getFullYear();
+
     }
 
 
-    // =========================================================
-    // ACCESSIBILITY STATE
-    // =========================================================
+    /* =====================================================
+       ACCESSIBILITY
+       ===================================================== */
 
-    const setExpandedState = (element, expanded) => {
-
-        if (!element) {
-            return;
-        }
-
-        element.setAttribute(
-            "aria-expanded",
-            expanded ? "true" : "false"
-        );
-    };
-
-
-    // =========================================================
-    // EXTERNAL CONTACT LINKS
-    // =========================================================
-
-    document.querySelectorAll('a[href^="http"]').forEach((link) => {
-
-        const href = link.getAttribute("href");
+    if (menuToggle) {
 
         if (
-            href &&
-            !href.includes(window.location.hostname)
+            !menuToggle.hasAttribute(
+                "aria-expanded"
+            )
         ) {
-            link.setAttribute("target", "_blank");
-            link.setAttribute("rel", "noopener noreferrer");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
         }
-
-    });
-
-
-    // =========================================================
-    // MOBILE MENU ACCESSIBILITY
-    // =========================================================
-
-    if (menuToggle && mainNav) {
-
-        menuToggle.addEventListener("click", () => {
-
-            const isOpen =
-                mainNav.classList.contains("active");
-
-            setExpandedState(menuToggle, !isOpen);
-
-        });
 
     }
 
 
-    // =========================================================
-    // MODAL ACCESSIBILITY
-    // =========================================================
+    /* =====================================================
+       EXTERNAL LINKS
+       ===================================================== */
 
-    const modalAction =
-        document.querySelector(".modal-action");
+    document
+        .querySelectorAll(
+            'a[href^="http"]'
+        )
+        .forEach((link) => {
 
-    if (modalAction) {
+            const href =
+                link.getAttribute(
+                    "href"
+                );
 
-        modalAction.addEventListener("click", () => {
 
             if (
-                infoModal &&
-                infoModal.getAttribute("aria-hidden") === "false"
+                href &&
+                !href.includes(
+                    window.location.hostname
+                )
             ) {
-                closeModal();
+
+                link.setAttribute(
+                    "target",
+                    "_blank"
+                );
+
+
+                link.setAttribute(
+                    "rel",
+                    "noopener noreferrer"
+                );
+
             }
 
         });
 
-    }
 
+    /* =====================================================
+       EMPTY ANCHOR PROTECTION
+       ===================================================== */
 
-    // =========================================================
-    // PREVENT EMPTY ANCHOR JUMPS
-    // =========================================================
+    document
+        .querySelectorAll(
+            'a[href="#"]'
+        )
+        .forEach((link) => {
 
-    document.querySelectorAll('a[href="#"]').forEach((link) => {
+            link.addEventListener(
+                "click",
+                (event) => {
 
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
+                    event.preventDefault();
+
+                }
+            );
+
         });
 
-    });
+
+    /* =====================================================
+       PAGE READY
+       ===================================================== */
+
+    document.body.classList.add(
+        "page-ready"
+    );
 
 
-    // =========================================================
-    // PAGE READY
-    // =========================================================
-
-    document.body.classList.add("page-ready");
-
-
-    // =========================================================
-    // ROYAL CREST INITIALIZATION
-    // =========================================================
+    /* =====================================================
+       FINAL CONSOLE MESSAGE
+       ===================================================== */
 
     console.log(
-        "%cRoyal Crest International School",
-        "font-size:18px;font-weight:700;"
+        "Royal Crest International School"
     );
 
     console.log(
         "Inspiring Excellence. Building Leaders."
     );
+
 
 });
